@@ -19,8 +19,7 @@ class WelcomeFragment : Fragment(){
         val startButton = view.findViewById<Button>(R.id.start)
 
         startButton.setOnClickListener {
-            view.findNavController()
-                .navigate(R.id.action_welcomeFragment_to_messageFragment)
+            view.findNavController().navigate(R.id.action_welcomeFragment_to_messageFragment)
         }
 
         return view
